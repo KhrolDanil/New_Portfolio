@@ -9,7 +9,7 @@ text-align: center;
   
 }
 
-.Name {
+.name {
   text-align: center;
 }
 
@@ -32,21 +32,8 @@ text-align: center;
   text-decoration: underline;
 }
 
-.Heading {
-  font-family: Arial;
-  margin-left: 20%;
-}
-
-.information {
-  font-family: Arial;
-  font-size: 16px;
-  margin-left: 20%;
-}
-
 .list {
-  font-family: Arial;
   font-size: 18px;
-  margin-left: 20%;
 }
 
 .photo-wrapper {
@@ -62,34 +49,31 @@ text-align: center;
 }
 
 .achievements-section {
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #333;
   gap: 20px;
-  padding: 30px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .achievements-container {
+  display: flex;
   border-radius: 8px;
   background-color: white;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
 }
 
-.h3_flex_container {
-  font-family: arial;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.information_flex_element {
-  font-family: arial;
-  font-size: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
 
 .year {
-padding-left: 90%;
+  align-self: flex-end;
 }
 
 .footer{
@@ -107,7 +91,13 @@ padding-left: 90%;
 .p_footer {
   border-radius: 8px;
   background-color: white;
-  
+  padding: 8px;
+}
+
+.main {
+  max-width: 800px; 
+  margin: 0 auto; 
+  font-family: Arial;
 }
 
 @media (max-widht: 768px) {
