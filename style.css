@@ -1,6 +1,12 @@
+.wrapper{
+text-align: center;
+}
+
+
 .profile-image {
-  display:block;
-  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  
 }
 
 .Name {
@@ -8,10 +14,115 @@
 }
 
 .nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 65px;
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.Heading {
+  font-family: Arial;
+  margin-left: 20%;
+}
+
+.information {
+  font-family: Arial;
+  font-size: 16px;
+  margin-left: 20%;
+}
+
+.list {
+  font-family: Arial;
+  font-size: 18px;
+  margin-left: 20%;
+}
+
+.photo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.photo-image {
+  max-height: 300px;
+}
+
+.achievements-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #333;
+  gap: 20px;
+  padding: 30px;
+}
+
+.achievements-container {
+  border-radius: 8px;
+  background-color: white;
+}
+
+.h3_flex_container {
+  font-family: arial;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.information_flex_element {
+  font-family: arial;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.year {
+padding-left: 90%;
+}
+
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #333;
+  font-size: 30px;
+  color: black;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.p_footer {
+  border-radius: 8px;
+  background-color: white;
+  
+}
+
+@media (max-widht: 768px) {
+.nav {
+flex-direction: column;
+align-items: center;
+}
+}
+
+.nav a {
+  width: 100%;
   text-align: center;
-  font-size: 25px;
-  background-color: brown;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: rgb(255, 255, 255);
-  padding: 1px 1px 1px 5px;
+}
+
+.photo-wrapper {
+  flex-direction: column;
+  align-items: center;
 }
